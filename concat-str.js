@@ -1,1 +1,1 @@
-const concatStr =  (arg, arg2) => arg.toString+arg2.toString;
+const concatStr =  (arg, arg2) => arg.toString + arg2.toString;
