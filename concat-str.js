@@ -1,0 +1,1 @@
+const concatStr =  (arg, arg2) => arg+arg2;
