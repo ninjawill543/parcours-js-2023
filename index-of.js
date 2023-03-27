@@ -20,7 +20,7 @@ function indexOf(array, word, index){
 
 function lastIndexOf(array, word, index){
     if (index != null){
-        for (let i = array.length - index; i >= 0; i--) {
+        for (let i = array.length; i >= 0; i--) {
             if (array[i] === word){
                 return i;
 
