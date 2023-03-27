@@ -10,6 +10,6 @@ function abs(arg){
     if (isPositive(arg) === true){
         return arg;
     }else{
-        return arg * -1;
+        return (arg * -1);
     }
 }
