@@ -17,9 +17,10 @@ function multiply(a, b){
 function divide(a, b){
     var rep = a;
     var count = 0;
-    while (rep > b){
-        rep = rep - b;
+    while (rep >= b){
         count = count + 1;
+        rep = rep - b;
+        
     }
     return count;
 }
