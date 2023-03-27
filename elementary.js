@@ -19,7 +19,7 @@ function multiply(a, b){
         return 0;
     }
     let flag = false;
-    let count = false;
+    let count = 0;
 
     if (a < 0) {
         a = -a;
