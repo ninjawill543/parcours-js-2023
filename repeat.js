@@ -1,3 +1,3 @@
 function repeat(string, num){
-    Array((num + 1)).join(string) 
+    console.log(Array((num + 1)).join(string)); 
 }
