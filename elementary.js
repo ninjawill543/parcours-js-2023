@@ -37,6 +37,7 @@ function multiply(a, b){
     }
     if (flag) {
         count = -count;
+        console.log(count);
     }
     return count; 
 }
