@@ -17,24 +17,13 @@ function multiply(a, b){
 function divide(a, b) {
     if (b === 0) {
       return NaN;
-    }
-    
-    var count = 0;
-    var sign = 1;
-    if (a < 0) {
-      sign = -sign;
-      a = -a;
-    }
-    if (b < 0) {
-      sign = -sign;
-      b = -b;
-    }
-    
+    }  
+    var count = 0;   
     while (a >= b) {
       a = a - b;
       count++;
     }
     
-    return count * sign;
+    return count ;
   }
   
