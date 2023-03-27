@@ -3,5 +3,5 @@ function repeat(string, num){
     for (let i = 0; i < num; i++) {
         arr.push(string);
     }
-    console.log(arr);
+    console.log(arr.toString());
 }
