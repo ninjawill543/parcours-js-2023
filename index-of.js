@@ -18,22 +18,17 @@ function indexOf(array, word, index){
     }
 }
 
-function lastIndexOf(array, word, index){
-    if (index != null){
-        for (let i = (array.length - index); i >= 0; i--) {
-            if (array[i] === word){
-                return i;
+function lastIndexOf(arr, value, index = arr.length - 1) {
+    for (let i = index; i >= 0; i--) {
+        if (arr[i] === value) return i
+    }
+    return -1
+}
 
-            }
-        }
-        return -1;
+function includes(array, word, index){
+    if (indexOf(array, word, index) != -1){
+        return true;
     }else{
-        for (let i = array.length; i >= 0; i--) {
-            if (array[i] === word){
-                return i;
-
-            }
-        }
-        return -1;
+        return false;
     }
 }
