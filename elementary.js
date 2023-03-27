@@ -14,16 +14,29 @@ function multiply(a, b){
     
 }
 
-function divide(a, b) {
-    if (b === 0) {
-      return NaN;
-    }  
-    var count = 0;   
-    while (a >= b) {
-      a = a - b;
-      count++;
+  function divide(a, b) {
+    let count = false
+    if (a < 0 && b < 0) {
+        a = -a
+        b = -b
     }
-    
-    return count ;
-  }
+
+    if (a < 0) {
+        a = -a
+        flag = true
+    }
+    if (b < 0) {
+        b = -b
+        flag = true
+    }
+    let result = a
+    while (result > b) {
+        result -= b
+        count++
+    }
+    if (flag) {
+        count = -count
+    }
+    return count
+}
   
