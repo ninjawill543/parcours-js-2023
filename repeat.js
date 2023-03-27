@@ -1,7 +1,7 @@
 function repeat(string, num){
-    let print;
+    var print;
     for (let i = 0; i < num; i++) {
-        let print = print + string;
+        print = print + string;
     }
     return print;
 }
