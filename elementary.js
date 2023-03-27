@@ -13,19 +13,20 @@ function multiply(a, b){
     }
     
 }
+
   
 
-  function divide(a, b) {
-    if (b === 0) {
-      return NaN;
-    }
+//   function divide(a, b) {
+//     if (b === 0) {
+//       return NaN;
+//     }
     
-    var count = 0;
+//     var count = 0;
     
-    while (a >= b) {
-      a = a - b;
-      count++;
-    }
+//     while (a >= b) {
+//       a = a - b;
+//       count++;
+//     }
     
-    return count;
-  }
+//     return count;
+//   }
