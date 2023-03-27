@@ -20,10 +20,6 @@ function multiply(a, b){
     }
     let flag = false;
     let count = false
-    if (a < 0 && b < 0) {
-        a = -a
-        b = -b
-    }
 
     if (a < 0) {
         a = -a
