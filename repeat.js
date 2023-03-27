@@ -3,5 +3,7 @@ function repeat(string, num){
     for (let i = 0; i < num; i++) {
         arr.push(string);
     }
-    console.log(arr.toString());
+    let array = arr.toString();
+    let res = array.replace(/,/g, " ");
+    console.log(res);
 }
