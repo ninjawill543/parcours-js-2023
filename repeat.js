@@ -5,5 +5,5 @@ function repeat(string, num){
     }
     let array = arr.toString();
     let res = array.replace(/,/g, "");
-    console.log(res);
+    return(res);
 }
