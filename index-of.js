@@ -22,18 +22,18 @@ function lastIndexOf(array, word, index){
     if (index != null){
         for (let i = (array.length - index); i >= 0; i--) {
             if (array[i] === word){
-                console.log(i) ;
+                return i;
 
             }
         }
-        console.log(-1);
+        return -1;
     }else{
         for (let i = array.length; i >= 0; i--) {
             if (array[i] === word){
-                console.log(i) ;
+                return i;
 
             }
         }
-        console.log(-1) ;
+        return -1;
     }
 }
