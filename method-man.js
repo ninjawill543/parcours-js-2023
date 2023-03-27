@@ -13,7 +13,7 @@ function yell(arg){
 }
 
 function whisper(arg){
-    return arg.toLowerCase();
+    return "*" + arg.toLowerCase() + "*";
 }
 
 function capitalize(arg){
