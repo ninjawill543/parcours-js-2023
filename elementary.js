@@ -15,6 +15,7 @@ function multiply(a, b){
 }
 
   function divide(a, b) {
+    let flag = false;
     let count = false
     if (a < 0 && b < 0) {
         a = -a
