@@ -7,7 +7,10 @@ function isPositive(arg){
 }
 
 function abs(arg){
-    if (isPositive(arg) === true){
+    if (arg === 0){
+        return 0;
+    }
+    else if (isPositive(arg) === true){
         return arg;
     }else{
         return (arg * -1);
