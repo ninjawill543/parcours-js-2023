@@ -6,10 +6,10 @@ function multiply(a, b){
         }
         return(sum);
     }else{
-        for (let i = 0; i > b; i--) {
+        for (let i = 0; i < -b; i++) {
             sum = sum + a;
         }
-        return(sum);
+        return(-sum);
     }
     
 }
