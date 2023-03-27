@@ -4,6 +4,6 @@ function repeat(string, num){
         arr.push(string);
     }
     let array = arr.toString();
-    let res = array.replace(/,/g, " ");
+    let res = array.replace(/,/g, "");
     console.log(res);
 }
