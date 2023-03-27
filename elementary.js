@@ -19,7 +19,7 @@ function divide(a, b){
     var count = 0;
     while (rep > b){
         rep = rep - b;
-        count ++;
+        count = count + 1;
     }
     return count;
 }
