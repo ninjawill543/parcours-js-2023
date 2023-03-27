@@ -33,11 +33,11 @@ function multiply(a, b){
     while (result > b) {
         result -= b;
         count++;
-        console.log(count);
+        //console.log(count);
     }
     if (flag) {
         count = -count;
-        console.log(count);
+        //console.log(count);
     }
     return count; 
 }
