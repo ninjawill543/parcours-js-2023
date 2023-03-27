@@ -4,7 +4,7 @@ function words(arg){
 
 function sentence(arg){
     let text = arg.toString();
-    let res = text.replace(",", "");
+    let res = text.replace(",", " ");
     return res;
 }
 
