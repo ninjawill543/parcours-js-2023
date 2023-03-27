@@ -19,24 +19,24 @@ function multiply(a, b){
         return 0;
     }
     let flag = false;
-    let count = false
+    let count = false;
 
     if (a < 0) {
-        a = -a
-        flag = true
+        a = -a;
+        flag = true;
     }
     if (b < 0) {
-        b = -b
-        flag = true
+        b = -b;
+        flag = true;
     }
-    let result = a
+    let result = a;
     while (result > b) {
-        result -= b
-        count++
+        result -= b;
+        count++;
     }
     if (flag) {
-        count = -count
+        count = -count;
     }
-    return count
+    console.log(count); 
 }
   
