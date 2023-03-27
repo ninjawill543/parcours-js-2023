@@ -3,5 +3,5 @@ function multiply(a, b){
     for (let i = 0; i < b; i++) {
         sum = sum + a;
     }
-    console.log(sum);
+    return(sum);
 }
