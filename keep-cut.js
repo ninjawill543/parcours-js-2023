@@ -18,6 +18,8 @@ function keepLast(string){
     return string.slice(string.length-2);
 }
 
+
 function keepFirstLast(string){
-    return keepFirst(string)+keepLast(string);
+    const str = string;
+    return keepFirst(string)+keepLast(str);
 }
