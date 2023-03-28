@@ -4,11 +4,11 @@ function slice(array, start, end){
         for (let i = start; i < array.length; i++) {
              newarray = newarray + array[i];
         }
-        return newarray;
+        console.log(newarray);
     }else{
         for (let i = start; i < end; i++) {
             newarray = newarray + array[i];
        }
-       return newarray;
+       console.log(newarray);
     }
 }
