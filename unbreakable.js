@@ -1,4 +1,4 @@
-function splitString(string, splitter) {
+function split(string, splitter) {
     var sliced = [];
     var startIndex = 0;
     for (var i = 0; i <= string.length; i++) {
