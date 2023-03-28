@@ -21,5 +21,10 @@ function keepLast(string){
 
 function keepFirstLast(string){
     const str = string;
-    return keepFirst(string)+keepLast(str);
+    if (string.length < 4){
+        return keepFirst(string)+keepLast(string);
+    }else{
+        return keepFirst(string)+keepLast(str);
+
+    }
 }
