@@ -1,5 +1,5 @@
 function split(string, splitter){
-    const sliced = [];
+    var sliced = [];
     var holder = '';
     for (let i = 0; i < string.length; i++) {
         if (string[i] === splitter){
