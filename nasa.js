@@ -1,4 +1,4 @@
-const nasaCountdown = (count) => {
+const nasa = (count) => {
     let countdownArray = [];
 
     for (let i = 1; i <= count; i++) {
