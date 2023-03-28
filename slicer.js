@@ -1,5 +1,5 @@
 function slice(array, start, end){
-    if (array.typeof === object){
+    if (typeof array === object){
         var newarray = [];
         if (end === null){
             for (let i = start; i < array.length-1; i++) {
