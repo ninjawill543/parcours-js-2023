@@ -1,7 +1,7 @@
 function slice(array, start, end){
     var newarray = [];
     if (end === null){
-        for (let i = start; i < array.length; i++) {
+        for (let i = start; i < array.length-1; i++) {
             newarray.push(array[i]);
         }
         return newarray;
