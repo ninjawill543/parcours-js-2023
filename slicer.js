@@ -6,8 +6,15 @@ function slice(arr, start = 0, end = arr.length) {
       end = arr.length + end;
     }
     let sliced = Array.isArray(arr) ? [] : '';
-    for (let i = start; i < end; i++) {
-      sliced += arr[i];
+    if (Array.isArray(arr)){
+        for (let i = start; i < end; i++) {
+            sliced.push(arr[i]);
+          }
+    }else{
+        for (let i = start; i < end; i++) {
+            sliced += arr[i];
+          }
     }
+    
     return sliced;
   }
