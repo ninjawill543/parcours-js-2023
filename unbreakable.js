@@ -5,7 +5,7 @@ function split(string, splitter){
         if (string[i] === splitter){
             sliced.push(holder);
         }else{
-            sliced += string[i];
+            holder += string[i];
         }
     }
     return sliced;
