@@ -4,6 +4,7 @@ function split(string, splitter){
     for (let i = 0; i < string.length; i++) {
         if (string[i] === splitter){
             sliced.push(holder);
+            holder = '';
         }else{
             holder += string[i];
         }
