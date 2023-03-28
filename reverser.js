@@ -6,7 +6,7 @@ function reverse(input){
         }
     }else{
         for (let i = input.length - 1; i >= 0; i--) {
-            sliced += arr[i];
+            sliced += input[i];
         }
     }
     return sliced;
