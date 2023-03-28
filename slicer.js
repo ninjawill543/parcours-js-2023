@@ -1,5 +1,6 @@
 function slice(array, start, end){
     if (typeof array === 'object'){
+        let newarray;
         newarray = [];
         if (end === null){
             for (let i = start; i < array.length-1; i++) {
@@ -13,6 +14,7 @@ function slice(array, start, end){
            return newarray;
         }
     }else{
+        let newarray;
         newarray = "";
         if (end === null){
             for (let i = start; i < array.length-1; i++) {
