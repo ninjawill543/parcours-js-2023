@@ -1,13 +1,11 @@
-function split(string, splitter){
+function splitString(string, splitter) {
     var sliced = [];
-    var holder = '';
-    for (let i = 0; i < string.length; i++) {
-        if (string[i] === splitter){
-            sliced.push(holder);
-            holder = '';
-        }else{
-            holder += string[i];
-        }
+    var startIndex = 0;
+    for (var i = 0; i <= string.length; i++) {
+      if (i === string.length || string[i] === splitter) {
+        sliced.push(string.slice(startIndex, i));
+        startIndex = i + 1;
+      }
     }
     return sliced;
-}
+  }
