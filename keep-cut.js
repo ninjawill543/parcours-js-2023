@@ -22,7 +22,7 @@ function keepLast(string){
 function keepFirstLast(string){
     const str = string;
     if (string.length < 4){
-        return keepFirst(string)+keepLast(string);
+        return keepLast(string);
     }else{
         return keepFirst(string)+keepLast(str);
 
