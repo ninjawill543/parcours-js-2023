@@ -1,32 +1,10 @@
-function slice(array, start, end){
-    if (typeof array === 'object'){
-        let newarray;
-        newarray = [];
-        if (end === null){
-            for (let i = start; i < array.length-1; i++) {
-                newarray.push(array[i]);
-            }
-            return newarray;
-        }else{
-            for (let i = start; i < end; i++) {
-                newarray.push(array[i]);
-           }
-           return newarray;
-        }
-    }else{
-        let newarray;
-        newarray = "";
-        if (end === null){
-            for (let i = start; i < array.length-1; i++) {
-                newarray = newarray + array[i];
-            }
-            return newarray;
-        }else{
-            for (let i = start; i < end; i++) {
-                newarray = newarray + array[i];
-           }
-           return newarray;
-        }
-    }
+function slice(arr, start = 0, end = arr.length) {
 
-}
+    let sliced = Array.isArray(arr) ? [] : '';
+  
+    for (let i = start; i < end; i++) {
+      sliced += arr[i];
+    }
+  
+    return sliced;
+  }
