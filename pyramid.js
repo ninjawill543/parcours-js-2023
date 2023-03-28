@@ -1,14 +1,20 @@
-function pyramid(char, height) {
-    let result = "";
-    let width = height * 2 - 1;
-    let middle = Math.floor(width / 2);
+const pyramid = (x, n) => {
+    let res = ''
+    for (let i = 1; i <= n; i++) {
+        let noOfChar = ((2 *i) - 1)
+        let noOfSpaces = (((2*n) - 1) - noOfChar) * x.length
+        noOfSpaces /= 2
+        for (let j = 0; j < noOfSpaces; j++) {
+            res += ' '
+        }
+        for (let k = 0; k < noOfChar; k++) {
+            res += x
+        }
+        if (i != n) {
+            res += '\n'
+        }
+        
 
-    for (let row = 0; row < height; row++) {
-        let rowChars = char.repeat(row * 2 + 1);
-        let rowSpaces = " ".repeat(middle - row);
-
-        result += rowSpaces + rowChars + "\n";
     }
-
-    return result;
+    return res
 }
