@@ -1,1 +1,1 @@
-let normal = /hi/gmi;
+let normal = /hi/;
