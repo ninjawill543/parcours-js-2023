@@ -1,4 +1,7 @@
-let normal = /hi/;
+const normal = /hi/;
 
-let begin = /hi/y;
+const begin = /^hi/;
 
+const end = /hi$/;
+
+const beginEnd = /^hi$/;
