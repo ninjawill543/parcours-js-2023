@@ -1,4 +1,4 @@
 let normal = /hi/;
 
-let begin = /hi/;
+let begin = /hi/y;
 
