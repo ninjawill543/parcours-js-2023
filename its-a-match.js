@@ -1,1 +1,1 @@
-const normal = /hi/gm;
+let normal = /hi/gmi;
